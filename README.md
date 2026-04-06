@@ -1,0 +1,1 @@
+1. state and function deifnes under the components.
