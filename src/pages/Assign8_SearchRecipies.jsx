@@ -14,11 +14,11 @@ const Assign8_SearchRecipies = () => {
             return;
         }
 
-        const res = await fetch(`https://dummyjson.com/recipes/search?q=${input}`);
+        const res = await fetch(`https://dummyjson.com/products/search?q=${input}`);
         const data = await res.json();
-        setResult(data?.recipes || []);
+        setResult(data?.products || []);
         // caching the input in object using state
-        setCache((prev) => ({...prev, [input] : data?.recipes}));
+        setCache((prev) => ({...prev, [input] : data?.products}));
     };
 
     // useEffect(() => {
@@ -55,7 +55,7 @@ const Assign8_SearchRecipies = () => {
                     onChange={(e) => setInput(e.target.value)}
                     onFocus={() => setShowResults(true)}
                     onBlur={() => setShowResults(false)}
-                    placeholder="Search recipes..."
+                    placeholder="Search products..."
                     className="w-full px-4 py-3 rounded-xl outline-none border"
                 />
 
@@ -67,11 +67,11 @@ const Assign8_SearchRecipies = () => {
                                 key={r.id}
                                 className="px-4 py-2 cursor-pointer hover:bg-gray-100 border-b last:border-none"
                                 onMouseDown={() => {
-                                    setInput(r.name);
+                                    setInput(r.title);
                                     setShowResults(false);
                                 }}
                             >
-                                {r.name}
+                                {r.title}
                             </div>
                         ))}
 

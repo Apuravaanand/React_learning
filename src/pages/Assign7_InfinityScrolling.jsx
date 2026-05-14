@@ -13,9 +13,7 @@ const Assign7_InfinityScrolling = () => {
         try {
             setLoading(true);
 
-            const res = await fetch(
-                `https://picsum.photos/v2/list?page=${page}&limit=1`
-            );
+            const res = await fetch(`https://picsum.photos/v2/list?page=${page}&limit=1`);
 
             const data = await res.json();
 
@@ -55,7 +53,7 @@ const Assign7_InfinityScrolling = () => {
                     className="h-screen w-full flex items-center justify-center snap-start bg-gray-200"
                 >
                     <img
-                        src={`https://picsum.photos/id/${photo.id}/4000/4000`}
+                        src={`https://picsum.photos/id/${photo.id}/800/400`}
                         alt="img"
                         loading="lazy"
                         className="w-full h-full object-contain object-center"

@@ -16,9 +16,9 @@ const App = () => {
       {/* <Assign3_ToggleImage /> */}
       {/* <Assign4_SearchFilter /> */}
       {/* <Assign5_Buttons /> */}
-      {/* <Assign6_PaginationTab /> */}
+      <Assign6_PaginationTab />
       {/* <Assign7_InfinityScrolling /> */}
-      <Assign8_SearchRecipies />
+      {/* <Assign8_SearchRecipies /> */}
     </>
   )
 }
