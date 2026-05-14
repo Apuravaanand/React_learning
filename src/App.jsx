@@ -7,6 +7,7 @@ import Assign5_Buttons from './pages/Assign5_Buttons'
 import Assign6_PaginationTab from './pages/Assign6_PaginationTab'
 import Assign7_InfinityScrolling from './pages/Assign7_InfinityScrolling'
 import Assign8_SearchRecipies from './pages/Assign8_SearchRecipies'
+import Assign9_PostForm from './pages/Assign9_PostForm'
 
 const App = () => {
   return (
@@ -16,9 +17,10 @@ const App = () => {
       {/* <Assign3_ToggleImage /> */}
       {/* <Assign4_SearchFilter /> */}
       {/* <Assign5_Buttons /> */}
-      <Assign6_PaginationTab />
+      {/* <Assign6_PaginationTab /> */}
       {/* <Assign7_InfinityScrolling /> */}
       {/* <Assign8_SearchRecipies /> */}
+      <Assign9_PostForm/>
     </>
   )
 }
